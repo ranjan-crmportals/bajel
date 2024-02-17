@@ -99,9 +99,11 @@ module.exports = async () => {
     }
   }
 
+  /*
   if (buildFiles.length > 1) {
     throw new Error(`Duplicate build files:\n${buildFiles.join('\n')}`)
   }
+  */
   if (buildFiles.length === 0) {
     throw new Error('ERROR: No build file.')
   }
